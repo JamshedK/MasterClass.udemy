@@ -7,8 +7,14 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        List<String> stringList = new ArrayList<>();
-        readValues();
+
+      ISavable player ;
+      player = new Player(19 ,"Jamshed", "jamik");
+      System.out.println(player.toString());
+      saveObject(player);
+
+      loadObject(player);
+      System.out.println(player.toString());
     }
 
     public static ArrayList<String> readValues() {
@@ -21,7 +27,7 @@ public class Main {
                 "1 - to enter a string\n" +
                 "0 - to quit");
 
-        while (!quit || index < 2) {
+        while (!quit) {
             System.out.println("Choose an option: ");
             int choice = scanner.nextInt();
             scanner.nextLine();
@@ -41,12 +47,13 @@ public class Main {
     }
 
     public static void saveObject(ISavable objectToSave){
-
+        for(int i = 0; i < objectToSave.writeToFile().size(); i++){
+            System.out.println("Saving object " + objectToSave.writeToFile().get(i) + " to storage device");
+        }
     }
 
     public static void loadObject(ISavable objectToSave){
         List<String> values = readValues();
-        objectToSave.populateObject(values);
-
+        objectToSave.readFromFile(values);
     }
 }

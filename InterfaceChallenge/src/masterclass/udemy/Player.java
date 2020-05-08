@@ -15,21 +15,29 @@ public class Player implements ISavable {
     }
 
     @Override
-    public List returnList() {
-        return null;
+    public List<String> writeToFile() {
+        List<String> values = new ArrayList<>();
+        values.add(0, "" + this.age);
+        values.add(1, name);
+        values.add(2, nickName);
+        return values;
     }
 
     @Override
-    public void populateObject(List <String> list) {
-
+    public void readFromFile(List <String> list) {
+        if(!list.isEmpty()) {
+            this.age = Integer.parseInt(list.get(0));
+            this.name = list.get(1);
+            this.nickName = list.get(2);
+        }
     }
 
     @Override
     public String toString() {
         return "Player{" +
-                "age=" + age +
-                ", name='" + name + '\'' +
-                ", nickName='" + nickName + '\'' +
+                "age=" + this.age +
+                ", name='" + this.name + '\'' +
+                ", nickName='" + this.nickName + '\'' +
                 '}';
     }
 }

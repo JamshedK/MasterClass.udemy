@@ -4,6 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface ISavable {
-    List<String> returnList();
-    void populateObject(List<String> list);
+    List<String> writeToFile();
+    void readFromFile(List<String> list);
 }

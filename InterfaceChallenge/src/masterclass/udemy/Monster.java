@@ -15,23 +15,21 @@ public class Monster implements ISavable {
     }
 
     @Override
-    public List<String> returnList() {
-        ArrayList<String> values = new ArrayList<>();
+    public List<String> writeToFile() {
+        List<String> values = new ArrayList<>();
         values.add(0, "" + this.health);
-        values.add(1, title);
+        values.add(1, this.title);
         values.add(2, "" + hitPoints);
         return values;
     }
 
     @Override
-    public void populateObject(List<String> list) {
+    public void readFromFile(List<String> list) {
         if(!list.isEmpty()){
             this.title = list.get(0);
             this.health = Integer.parseInt(list.get(1));
             this.hitPoints = Integer.parseInt(list.get(2));
-
         }
-
     }
 
     @Override
