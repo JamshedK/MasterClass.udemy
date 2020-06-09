@@ -1,27 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bff705b6-cb0d-4d29-b97e-eadde60238ca" name="Default Changelist" comment="" />
+    <list default="true" id="b55a4113-c5fc-4fae-97d3-e9fdf542ae97" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../GameTest/GameTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Generics challenge/Generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java masterclass.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageChallenge1/PackageChallenge1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageChallenge2/PackagesChallenge2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageDemo/PackageDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageDemo/src/com/example/game/ISavable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageDemo/src/com/example/game/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageDemo/src/com/example/game/Monster.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PackageDemo/src/com/example/game/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/description.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/project-template.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/WinDemo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/out/production/WinDemo/com/example/awtSample/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/out/production/WinDemo/com/example/awtSample/MyWindow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/out/production/WinDemo/com/example/awtSample/MyWindow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/src/com/example/awtSample/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../WinDemo/src/com/example/awtSample/MyWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1YOUuLglxomWPkOf51e39ZjGa2P" />
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
-  </component>
+  <component name="ProjectId" id="1bkYZ7U8vnl4jUIFxFRk6sdMR8M" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -35,9 +60,12 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="WordCount" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="masterclass.udemy.Main" />
       <module name="WordCount" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -48,12 +76,23 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="bff705b6-cb0d-4d29-b97e-eadde60238ca" name="Default Changelist" comment="" />
-      <created>1582813355510</created>
+      <changelist id="b55a4113-c5fc-4fae-97d3-e9fdf542ae97" name="Default Changelist" comment="" />
+      <created>1589177610481</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1582813355510</updated>
+      <updated>1589177610481</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
