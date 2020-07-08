@@ -1,4 +1,4 @@
-package sample;
+package com.udemy.masterclass.todolist;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,9 +10,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
-        primaryStage.setScene(new Scene(root, 700, 275));
+        Parent root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
+        primaryStage.setTitle("To do list ");
+        primaryStage.setScene(new Scene(root, 900, 500 ));
         primaryStage.show();
     }
 
