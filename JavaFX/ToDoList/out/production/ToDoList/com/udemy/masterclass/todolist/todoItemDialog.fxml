@@ -1,0 +1,24 @@
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.text.Font?>
+<DialogPane fx:controller="com.udemy.masterclass.todolist.DialogController"
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@styles.css">
+    <headerText>
+        You could put instructions here
+    </headerText>
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label id="dialogueLabel" text="Short description" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="title" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label id="dialogueLabel" text="Long description" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextArea fx:id="description" GridPane.columnIndex="1" GridPane.rowIndex="1" wrapText="true"/>
+            <Label id="dialogueLabel" text="Deadline:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="deadline" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>

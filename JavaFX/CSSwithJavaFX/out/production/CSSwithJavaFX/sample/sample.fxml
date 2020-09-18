@@ -1,0 +1,16 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" stylesheets="@styles.css" id="mainGridPane">
+    <HBox id="hbox" GridPane.rowIndex="0" GridPane.columnIndex="1">
+        <Button id="blueButton" text="Button 1"/>
+        <Button text="Button 2"/>
+        <Button text="Button 3"/>
+        <Button text="Button 4"/>
+        <Button text="Button 5"/>
+    </HBox>
+</GridPane>

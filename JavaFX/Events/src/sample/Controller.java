@@ -56,9 +56,11 @@ public class Controller {
                catch (InterruptedException event){
                    // not necessary at the moment
                }
+
            }
        };
         new Thread(task).start();
+
         if (isToClearChecked.isSelected()){
             nameField.clear();
             helloButton.setDisable(true);
@@ -74,7 +76,7 @@ public class Controller {
     @FXML
     public void handleKeyReleased(){
         String text = nameField.getText();
-        boolean isEmpty = text.isEmpty() || text.trim().isEmpty();
+        boolean isEmpty = text.isEmpty() || text.trim().isEmpty(); // trim is for white spaces
         helloButton.setDisable(isEmpty);
         byeButton.setDisable(isEmpty);
     }

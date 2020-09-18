@@ -1,6 +1,6 @@
 package com.udemy.masterclass.todolist.datamodel;
-
 import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
@@ -10,13 +10,12 @@ import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Iterator;
-import java.util.List;
 
 public class TodoData {
     private static TodoData instance = new TodoData();
     private static String filename = "TodoListItems.txt";
 
-    private List<TodoItem> todoItems;
+    private ObservableList<TodoItem> todoItems;
     private DateTimeFormatter formatter;
 
     public TodoData() {
@@ -27,13 +26,34 @@ public class TodoData {
         return instance;
     }
 
-    public List<TodoItem> getTodoItems() {
+    public ObservableList<TodoItem> getTodoItems() {
         return todoItems;
     }
 
-    public void setTodoItems(List<TodoItem> todoItems) {
-        this.todoItems = todoItems;
+    public void addTodoItem(TodoItem item){
+        todoItems.add(item);
     }
+
+    public void deleteItem(TodoItem item){
+        todoItems.remove(item);
+    }
+    /*
+        This method is for updating the description of a todo list item
+     */
+    public void updateDescription(TodoItem item, String newDescription){
+            // find the position of the item which description needs to be changed.
+           int position = todoItems.indexOf(item);
+           // then change that items description
+            todoItems.get(position).setDescription(newDescription);
+    }
+
+    public void updateTodoItem(TodoItem item) {
+        todoItems.set(todoItems.indexOf(item),item);
+    }
+
+//    public void setTodoItems(ObservableList<TodoItem> todoItems) {
+//        this.todoItems = todoItems;
+//    }
 
     public void loadTodoItems() throws IOException{
         todoItems = FXCollections.observableArrayList();
@@ -66,7 +86,7 @@ public class TodoData {
             while (iterator.hasNext()){
                 TodoItem item = iterator.next();
                 bw.write(String.format("%s\t%s\t%s\t",
-                        item.getShortDescription(),
+                        item.getTitle(),
                         item.getDescription(),
                         item.getDeadline().format(formatter)));
                 bw.newLine();

@@ -1,0 +1,18 @@
+.button{
+    -fx-background-color:green;
+    -fx-text-fill:white;
+}
+#blueButton{
+    -fx-background-color:red;
+    -fx-text-fill:white;
+}
+#hbox{
+    -fx-spacing: 10;
+    -fx-padding: 10;
+}
+#mainGridPane{
+    -fx-background-color: blue;
+    -fx-hgap: 10;
+    -fx-vgap: 10;
+    -fx-alignment: center;
+}

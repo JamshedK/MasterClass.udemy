@@ -14,6 +14,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("mainWindow.fxml"));
+//        setUserAgentStylesheet(STYLESHEET_CASPIAN);
         primaryStage.setTitle("To do list ");
         primaryStage.setScene(new Scene(root, 900, 500 ));
         primaryStage.show();

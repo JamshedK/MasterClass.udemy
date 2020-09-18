@@ -5,7 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.FlowPane?>
 <FlowPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" orientation="vertical" alignment="CENTER">
+          xmlns:fx="http://javafx.com/fxml" orientation="horizontal" alignment="CENTER" vgap="10" hgap="10">
     <Button text="Button 1"/>
     <Button text="Button 2"/>
     <Button text="Button 3"/>

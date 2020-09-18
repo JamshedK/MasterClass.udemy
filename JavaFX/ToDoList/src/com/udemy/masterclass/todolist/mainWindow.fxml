@@ -8,33 +8,49 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
-<BorderPane fx:controller="com.udemy.masterclass.todolist.Controller"
-            xmlns:fx="http://javafx.com/fxml">
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ToggleButton?>
+<BorderPane fx:id="mainBorderPane" fx:controller="com.udemy.masterclass.todolist.Controller"
+            xmlns:fx="http://javafx.com/fxml" stylesheets="@styles.css">
+    <top>
+        <VBox>
+            <MenuBar>
+                <Menu text="File">
+                    <items>
+                        <MenuItem text="New...." onAction="#showAddItemDialogPane"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Exit"/>
+                    </items>
+                </Menu>
+            </MenuBar>
+            <ToolBar>
+                <HBox spacing="10">
+                    <Button text="Add" onAction="#showAddItemDialogPane">
+                        <tooltip>
+                            <Tooltip text="Add mew todo item"/>
+                        </tooltip>
+                    </Button>
+                    <ToggleButton fx:id="filterToggleButton" text="Today only" onAction="#handleOnToggleButtonClicked"/>
+                </HBox>
+            </ToolBar>
+        </VBox>
+    </top>
     <left>
-        <ListView fx:id="todoListView">
-        </ListView>
+        <ListView fx:id="todoListView" id="listView" onKeyPressed="#handleDeleteKeyPressed"/>
     </left>
     <center>
         <VBox style="-fx-background-color: white">
-            <TextArea fx:id="descriptionArea" VBox.vgrow="ALWAYS" editable="false">
-                <font>
-                    <Font name="Times New Roman" size="20"/>
-                </font>
-            </TextArea>
-            <HBox spacing="5">
-                <padding>
-                    <Insets top="20" bottom="20" left="20"/>
-                </padding>
-                <Label text="Due: ">
-                    <font>
-                        <Font name="Times New Roman bold" size="20"/>
-                    </font>
-                </Label>
-                <Label fx:id="deadlineLabel">
-                    <font>
-                        <Font name="Times New Roman bold" size="20"/>
-                    </font>
-                </Label>
+            <TextArea fx:id="descriptionArea" id="textArea" VBox.vgrow="ALWAYS" editable="true" wrapText="true"
+                      onMouseExited="#handleOnMouseExited"/>
+            <HBox id="deadlineHBox" spacing="5">
+                <Label id="dueAndDeadlineLabels" text="Due: "/>
+                <Label fx:id="deadlineLabel" id="dueAndDeadlineLabels"/>
             </HBox>
         </VBox>
     </center>

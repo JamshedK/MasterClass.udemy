@@ -3,22 +3,22 @@ package com.udemy.masterclass.todolist.datamodel;
 import java.time.LocalDate;
 
 public class TodoItem {
-    private String shortDescription;
+    private String title;
     private String description;
     private LocalDate deadline;
 
-    public TodoItem(String shortDescription, String description, LocalDate deadline) {
-        this.shortDescription = shortDescription;
+    public TodoItem(String title, String description, LocalDate deadline) {
+        this.title = title;
         this.description = description;
         this.deadline = deadline;
     }
 
-    public String getShortDescription() {
-        return shortDescription;
+    public String getTitle() {
+        return title;
     }
 
-    public void setShortDescription(String shortDescription) {
-        this.shortDescription = shortDescription;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getDescription() {
@@ -39,6 +39,6 @@ public class TodoItem {
 
     @Override
     public String toString() {
-        return shortDescription;
+        return title;
     }
 }

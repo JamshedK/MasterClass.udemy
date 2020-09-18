@@ -1,0 +1,40 @@
+.button{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+.toggle-button{
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}
+.toggle-button:selected{
+        -fx-background-color: green;
+}
+#listView{
+    -fx-font-family: Times New Roman;
+    -fx-font-size: 14;
+    -fx-font-weight: normal;
+}
+#deadlineHBox{
+    -fx-spacing: 10;
+    -fx-padding: 10, 0, 10, 20;
+}
+#dueAndDeadlineLabels{
+    -fx-font-family: Times New Roman;
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+}
+
+#textArea{
+    -fx-font-family: Times New Roman;
+    -fx-font-size: 16;
+}
+#dialogueLabel{
+    -fx-font-family: Times New Roman;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+.menu{
+    -fx-font-family: Times New Roman;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
